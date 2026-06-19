@@ -1,0 +1,16 @@
+# Default reviewers
+*                                   @course-tas
+
+# Channel adapter PRs land on the TA team — visual review before merge.
+/glc/channels/catalogue/**          @course-tas
+
+# Core gateway changes need a maintainer.
+/glc/main.py                        @course-maintainers
+/glc/routes/                        @course-maintainers
+/glc/policy/                        @course-maintainers
+/glc/security/                      @course-maintainers
+/glc/audit/                         @course-maintainers
+
+# CLAIMS.md uniqueness is enforced by CI; reviewers only need to verify
+# the group name.
+/CLAIMS.md                          @course-tas
