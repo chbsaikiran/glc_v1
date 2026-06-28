@@ -77,9 +77,9 @@ tests\voice\stt\test_groq_whisper.py .......                             [100%]
 (base) C:\SchoolofAI\session11> uv run pytest tests/test_voice_routing.py
 collected 12 items
 
-tests\test_voice_routing.py .........s..                                 [100%]
+tests\test_voice_routing.py ............                                 [100%]
 
-======================== 11 passed, 1 skipped in 0.29s ========================
+============================= 12 passed in 3.79s ==============================
 ```
 
 ### 3. FastAPI Endpoint Transcription Tests
