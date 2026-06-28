@@ -55,4 +55,39 @@ To test with a live laptop recording, use the helper script created at the works
 ```sh
 uv run test_stt_mic.py
 ```
-This script will record 5 seconds from your microphone and output the resulting text.
+
+---
+
+## Verification & Test Results
+
+All 23 automated tests pass successfully:
+
+### 1. Provider Adapter Tests
+```
+(base) C:\SchoolofAI\session11> uv run pytest tests/voice/stt/test_groq_whisper.py
+collected 7 items
+
+tests\voice\stt\test_groq_whisper.py .......                             [100%]
+
+============================== 7 passed in 0.29s ==============================
+```
+
+### 2. Voice Routing Layer Tests
+```
+(base) C:\SchoolofAI\session11> uv run pytest tests/test_voice_routing.py
+collected 12 items
+
+tests\test_voice_routing.py .........s..                                 [100%]
+
+======================== 11 passed, 1 skipped in 0.29s ========================
+```
+
+### 3. FastAPI Endpoint Transcription Tests
+```
+(base) C:\SchoolofAI\session11> uv run pytest tests/test_transcribe_route.py
+collected 5 items
+
+tests\test_transcribe_route.py .....                                     [100%]
+
+======================== 5 passed, 1 warning in 0.38s =========================
+```
